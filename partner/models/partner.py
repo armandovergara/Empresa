@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from openerp import api, fields, models
+from openerp.exceptions import Warning as UserError
 
 
 class ResPartner(models.Model):
