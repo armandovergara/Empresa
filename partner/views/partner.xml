@@ -1,0 +1,27 @@
+<openerp>
+    <data>
+
+        <record id="partner_view" model="ir.ui.view">
+            <field name="name">res.partner.partner</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name" string="Nombre"/>
+                        <field name="skill" string="Record"/>
+                        <field name="years" string="Años"/>
+                        <field name="company_id" string="Compañia"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record id="action_12_3" model="ir.actions.act_window">
+            <field name="name">Empresa1</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+
+    </data>
+</openerp>
